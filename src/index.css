@@ -55,7 +55,8 @@ body {
   padding: 0;
   background: var(--vertical-blue-to-black);
   background-repeat: no-repeat;
-  min-height: 100dvh;
+  min-height: 100vh;
+  max-width: 100vw;
 
   /* same as body text class that is commented out */
   font-family: var(--Athiti);

@@ -1,6 +1,11 @@
 .header-component {
-    max-width: 100dvw;
-    height: 500px;
+    max-width: 100vw;
+    height: 53vh;
     background-size: cover;
     background-position: 50% 50%;
+}
+
+.header-shape {
+    width: 100%;
+    height: 100%;
 }
