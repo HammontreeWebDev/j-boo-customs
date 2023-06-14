@@ -1,6 +1,6 @@
 import React from "react";
 
-// Jesse's Story Page | route = /jessesstory
+// Jesse's Story Page | route = /jesses_story
 const JessesStory = () => {
 
     return(

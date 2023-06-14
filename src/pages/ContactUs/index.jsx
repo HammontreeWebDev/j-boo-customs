@@ -1,6 +1,6 @@
 import React from "react";
 
-// Contact Us Page | route = /contactus
+// Contact Us Page | route = /contact_us
 const ContactUs = () => {
 
     return(

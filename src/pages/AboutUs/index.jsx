@@ -1,6 +1,6 @@
 import React from "react";
 
-// About Us Page located at /aboutus
+// About Us Page located at /about_us
 const AboutUs = () => {
 
     return(
