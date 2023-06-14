@@ -2,9 +2,11 @@ import React from "react";
 
 import './assets/css/header.css';
 
-const Header = () => {
+const Header = (props) => {
     return(
-        <div>This is the header component</div>
+        <header className="header-component" style={{backgroundImage: `url(${props.backgroundImage})`}}>
+
+        </header>
     )
 }
 
