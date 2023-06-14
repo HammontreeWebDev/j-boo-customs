@@ -15,23 +15,37 @@
   --vertical-blue-to-black: linear-gradient(to bottom, var(--dark-blue), var(--black));
 
   /* *Fonts */
-
+  --Acme:'Acme', sans-serif;
+  --Athiti: 'Athiti', sans-serif;
 
 }
 
 /* *Font Style Classes (body text will be the default, and located in the body element) */
 
 .h1-header {
-
+font-family: var(--Acme);
+font-size: 40px;
+font-weight: normal;
+}
+.header-subtext {
+font-family: var(--Athiti);
+font-size: 20px;
+font-weight: normal;
 }
 .card-title {
-
+  font-family: var(--Acme);
+  font-size: 32px;
+  font-weight: normal;
 }
-.body-text {
-
-}
+/* .body-text {
+  font-family: var(--Athiti);
+  font-size: 16px;
+  font-weight: bold;
+} */
 .contact-subheading {
-
+  font-family: var(--Acme);
+  font-size: 20px;
+  font-weight: normal;
 }
 
 body {
@@ -39,4 +53,9 @@ body {
   background: var(--vertical-blue-to-black);
   background-repeat: no-repeat;
   min-height: 100dvh;
+
+  /* same as body text class that is commented out */
+  font-family: var(--Athiti);
+  font-size: 16px;
+  font-weight: bold;
 }
