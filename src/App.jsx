@@ -8,6 +8,7 @@ import JessesStory from './pages/JessesStory';
 import StrepAAwareness from './pages/StrepAAwareness';
 import ContactUs from './pages/ContactUs';
 import Donations from './pages/Donations';
+import NotFound from './pages/NotFound';
 
 // css file
 import './App.css';
@@ -15,7 +16,6 @@ import './App.css';
 // ! only need to tell the router which page to render based on the path associated in the URL | Each Page will dictate A header component (also containing a navbar) that will pass props (images will change on each page), its own main section with relevant components, and a footer component that probably won't change much
 
 // TODO: Add a wildcard page that redirects to custom 404 screen
-// TODO: Routes not working properly
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
         <Route path='/strep_a_awareness' element={<StrepAAwareness />} />
         <Route path='/contact_us' element={<ContactUs />} />
         <Route path='/donations' element={<Donations />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
