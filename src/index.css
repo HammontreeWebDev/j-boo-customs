@@ -9,14 +9,34 @@
   --light-green: #BEED26;
   --orange: #ED3E26;
   --black: #121314;
+  --white: #FFFFFF;
 
   /* *Gradients */
+  --vertical-blue-to-black: linear-gradient(to bottom, var(--dark-blue), var(--black));
+
+  /* *Fonts */
+
+
+}
+
+/* *Font Style Classes (body text will be the default, and located in the body element) */
+
+.h1-header {
+
+}
+.card-title {
+
+}
+.body-text {
+
+}
+.contact-subheading {
 
 }
 
 body {
   margin: 0;
-  background: linear-gradient(to bottom, var(--dark-blue), var(--black));
+  background: var(--vertical-blue-to-black);
   background-repeat: no-repeat;
   min-height: 100dvh;
 }
