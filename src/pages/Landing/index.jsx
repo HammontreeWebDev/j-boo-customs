@@ -1,10 +1,13 @@
 import React from "react";
 
+// import components
+import Header from "../../components/Header";
+
 // Landing Page | route = /landing
 const Landing = () => {
 
     return(
-        <h1>This is the Landing Page</h1>
+        <Header />
     )
 };
 
