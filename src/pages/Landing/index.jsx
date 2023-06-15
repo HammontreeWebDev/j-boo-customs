@@ -13,7 +13,9 @@ const Landing = () => {
         <>
         <Header backgroundImage={landingHeader}/>
         <main>
-
+            <section className="row">
+                
+            </section>
         </main>
         </>
     )
