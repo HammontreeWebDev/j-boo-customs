@@ -17,10 +17,42 @@
 
 .header-content {
     display: flex;
-    flex-direction: row wrap;
+    flex-flow: row wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex: 1;
     position: relative;
     z-index: 1;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.nav-bar {
+    display: flex;
+    flex: 0.9;
+    justify-content: space-between;
+    background-color: var(--dark-blue-trans);
+}
+
+.nav-bar button {
+    background-color: transparent;
+    border: none;
+    color: var(--light-green);
+}
+
+.nav-bar button:hover {
+    cursor: pointer;
+}
+
+.collapsed {
+    display: none;
+}
+.toggle-nav-button {
+    display: none;
+}
+
+@media screen and (max-width: 1330px) {
+   .nav-bar.collapsed {
+    display: none;
+   }
 }

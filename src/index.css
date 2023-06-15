@@ -16,6 +16,9 @@
   /* *Gradients */
   --vertical-blue-to-black: linear-gradient(to bottom, var(--dark-blue), var(--black));
 
+  /* *transparent colors */
+  --dark-blue-trans: rgba(26, 80, 161, .5);
+
   /* *Fonts */
   --Acme:'Acme', sans-serif;
   --Athiti: 'Athiti', sans-serif;
@@ -44,7 +47,7 @@ font-weight: normal;
   font-size: 16px;
   font-weight: bold;
 } */
-.contact-subheading {
+.subheading-text {
   font-family: var(--Acme);
   font-size: 20px;
   font-weight: normal;
