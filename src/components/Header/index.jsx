@@ -40,6 +40,13 @@ const Header = (props) => {
                     <button className="subheading-text">Contact Us</button>
                     <button className="subheading-text">Donations</button>
                 </nav>
+                <div className="header-subtext tagline-container">
+                    <p className="header-tagline">
+                        J-Boo Customs Store
+                        <br />
+                        Coming Soon!
+                    </p>
+                </div>
             </div>
         </header>
     )
