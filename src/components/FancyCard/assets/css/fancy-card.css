@@ -102,11 +102,36 @@
     }
 
     .member-photo {
-        width: 35%;
-        margin-top: 0%;
+        /* reset margin */
+        margin: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 225%;
     }
 
     .fancy-header {
         height: 25%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .text-col {
+        margin-top: 20%;
+    }
+    .about-us-title {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 388px) {
+    .text-col {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 332px) {
+    .fancy-header {
+        height: 15%;
     }
 }
