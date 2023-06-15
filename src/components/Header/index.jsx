@@ -23,8 +23,10 @@ const Header = (props) => {
             <img className="header-shape" src={headerShape} alt="Red Arch to enhance design" />
             <div className="header-content">
                 <h1 className="h1-header">Jesse Ryder Brown Foundation, INC</h1>
-                {/* <button className="toggle-nav-button" onClick={() => setIsNavCollapsed(!isNavCollapsed)}></button> */}
-                <nav className={`nav-bar ${isNavCollapsed ? 'collapsed' : ''}`}>
+                <button className="toggle-nav-button" onClick={() => setIsNavCollapsed(!isNavCollapsed)}>X</button>
+                <nav
+                id={`${isNavCollapsed ? '' : 'dropdown-nav'}`}
+                className={`nav-bar ${isNavCollapsed ? 'collapsed' : ''}`}>
                     <button className="subheading-text">About Us</button>
                     <button className="subheading-text">Jesse's Story</button>
                     <button className="subheading-text">Strep A Awareness</button>

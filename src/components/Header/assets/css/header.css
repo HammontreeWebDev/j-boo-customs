@@ -44,15 +44,33 @@
     cursor: pointer;
 }
 
-.collapsed {
-    display: none;
-}
 .toggle-nav-button {
     display: none;
 }
 
+/* media queries to hand collapsible nav bar */
 @media screen and (max-width: 1330px) {
-   .nav-bar.collapsed {
-    display: none;
-   }
+    .nav-bar.collapsed {
+        display: none;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .toggle-nav-button {
+        display: block;
+        position: absolute;
+        top: 20%;
+        right: -4%;
+    }
+
+    #dropdown-nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 41%;
+        right: 0%;
+    }
+
 }
