@@ -1,0 +1,6 @@
+.gallery-photo {
+    width: 30%;
+    margin-bottom: 6%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}

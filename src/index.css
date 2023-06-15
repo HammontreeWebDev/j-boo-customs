@@ -84,8 +84,8 @@ main {
 
 .row {
   display: flex;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
   flex: 1;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-start;
 }
