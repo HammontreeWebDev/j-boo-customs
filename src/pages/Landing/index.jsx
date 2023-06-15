@@ -10,7 +10,12 @@ import landingHeader from './assets/img/landing_header.png'
 const Landing = () => {
 
     return(
+        <>
         <Header backgroundImage={landingHeader}/>
+        <main>
+
+        </main>
+        </>
     )
 };
 

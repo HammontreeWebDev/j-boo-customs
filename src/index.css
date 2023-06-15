@@ -73,3 +73,8 @@ body {
 #root {
   height: 100%;
 }
+
+main {
+  /* default margin style for main to match header text margins */
+  margin: 0% 6% 0% 6%;
+}
