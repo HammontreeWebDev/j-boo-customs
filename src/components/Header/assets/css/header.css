@@ -50,6 +50,7 @@
 
 /* media queries to hand collapsible nav bar */
 @media screen and (max-width: 1330px) {
+
     .nav-bar.collapsed {
         display: none;
     }
@@ -61,16 +62,98 @@
     .toggle-nav-button {
         display: block;
         position: absolute;
-        top: 20%;
-        right: -4%;
+        top: 30%;
+        right: 0%;
+        background-color: transparent;
+        border: none;
+        padding: none;
+        font-size: 40px;
+        color: var(--white);
     }
 
     #dropdown-nav {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        padding: 1%;
         position: absolute;
-        top: 41%;
-        right: 0%;
+        top: 72%;
+        width: 100%;
+        transition: transform 0.8s ease;
     }
 
+    .dropdown-nav-visible {
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .dropdown-nav-hidden {
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+      }      
+
+}
+
+/* media queries to handle text/image size in header */
+
+@media screen and (max-width: 1050px){ 
+    .h1-header, .toggle-nav-button{
+        /* down from 40px */
+        font-size: 32px;
+    }
+    .header-component {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 715px){ 
+    .h1-header, .toggle-nav-button{
+        /* down from 40px */
+        font-size: 32px;
+    }
+    .header-component {
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width: 575px){ 
+    .h1-header, .toggle-nav-button{
+        /* down from 40px */
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 482px){ 
+    .h1-header, .toggle-nav-button{
+        /* down from 40px */
+        font-size: 25px;
+    }
+    .subheading-text {
+        font-size: 18px;
+    }
+    .header-component {
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width: 430px){ 
+    .h1-header, .toggle-nav-button{
+        /* down from 40px */
+        font-size: 20px;
+    }
+    .subheading-text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 290px){ 
+    .h1-header, .toggle-nav-button{
+        /* down from 40px */
+        font-size: 15px;
+    }
+    .subheading-text {
+        font-size: 15px;
+    }
 }
