@@ -31,7 +31,11 @@ const Header = (props) => {
         <header className="header-component" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
             <img className="header-shape" src={headerShape} alt="Red Arch to enhance design" />
             <div className="header-content">
-                <h1 className="h1-header">Jesse Ryder Brown Foundation, INC</h1>
+
+                <button onClick={() => navigate('/')} className="h1-header jrb-button">
+                    Jesse Ryder Brown Foundation, INC
+                </button>
+
 
                 <button className="toggle-nav-button" onClick={() => setIsNavCollapsed(!isNavCollapsed)}>
                     <Icon icon="line-md:close-to-menu-alt-transition" />

@@ -1,10 +1,13 @@
 import React from "react";
 
+import Header from "../../components/Header";
+import aboutUsHeader from './assets/img/about-us-header.png';
+
 // About Us Page located at /about_us
 const AboutUs = () => {
 
     return(
-        <h1>This is the About Us Page</h1>
+        <Header backgroundImage={aboutUsHeader}/>
     )
 }
 
