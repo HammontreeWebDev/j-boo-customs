@@ -1,10 +1,12 @@
 import React from "react";
+import Header from "../../components/Header";
+import donationsHeader from './assets/img/donations-header.png';
 
 // Donations Page | route = /donations
 const Donations = () => {
 
     return(
-        <h1>This is the Donations Page</h1>
+        <Header backgroundImage={donationsHeader} />
     )
 };
 
