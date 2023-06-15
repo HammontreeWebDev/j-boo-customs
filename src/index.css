@@ -1,6 +1,8 @@
 /* set variables */
 /* TODO: set main margin to "margin: 0% 5% 0% 5%;"  */
 
+/* ! Note that most of the media queries for global classes are located in the header.css file */
+
 :root {
   
   /* *Color Scheme */
@@ -65,7 +67,7 @@ body {
 
   /* same as body text class that is commented out */
   font-family: var(--Athiti);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: var(--white);
 }
@@ -88,4 +90,8 @@ main {
   flex: 1;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.text-center {
+  text-align: center;
 }

@@ -120,7 +120,7 @@
 
 }
 
-/* media queries to handle text/image size in header */
+/* media queries to handle text/image size in header / other global classes*/
 
 @media screen and (max-width: 1050px) {
 
@@ -133,15 +133,13 @@
     .header-component {
         height: 40vh;
     }
+
+    .card-title {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 715px) {
-
-    .h1-header,
-    .toggle-nav-button {
-        /* down from 40px */
-        font-size: 32px;
-    }
 
     .header-component {
         height: 35vh;
@@ -155,6 +153,9 @@
         /* down from 40px */
         font-size: 28px;
     }
+    .card-title {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 503px) {
@@ -163,6 +164,10 @@
     .toggle-nav-button {
         /* down from 40px */
         font-size: 25px;
+    }
+
+    .card-title {
+        font-size: 22px;
     }
 
     .subheading-text {
@@ -187,6 +192,10 @@
         margin: 0;
         font-size: 14px;
     }
+
+    body {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 452px) {
@@ -197,6 +206,10 @@
         font-size: 20px;
     }
 
+    .card-title {
+        font-size: 19px;
+    }
+
     .subheading-text {
         font-size: 18px;
     }
@@ -205,12 +218,10 @@
 @media screen and (max-width: 367px) {
 
     .h1-header,
-    .toggle-nav-button {
-        /* down from 40px */
-        font-size: 15px;
-    }
-
+    .toggle-nav-button, 
+    .card-title,
     .subheading-text {
-        font-size: 15px;
+        /* down from 40px */
+        font-size: 17px;
     }
 }
