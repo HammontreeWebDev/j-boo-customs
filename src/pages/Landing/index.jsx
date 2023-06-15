@@ -3,6 +3,7 @@ import React from "react";
 // import components
 import Header from "../../components/Header";
 import GalleryPhoto from "../../components/GalleryPhoto";
+import CustomVideo from "../../components/CustomVideo";
 
 // import images
 import landingHeader from './assets/img/landing_header.png'
@@ -12,6 +13,9 @@ import ph3 from './assets/img/ph-3.png';
 import ph4 from './assets/img/ph-4.png';
 import ph5 from './assets/img/ph-5.png';
 import ph6 from './assets/img/ph-6.png';
+
+// import video
+import phVid from './assets/video/ph-vid.mp4';
 
 
 // Landing Page | route = /landing
@@ -28,6 +32,10 @@ const Landing = () => {
                 <GalleryPhoto src={ph4} alt="placeholder image"/>
                 <GalleryPhoto src={ph5} alt="placeholder image"/>
                 <GalleryPhoto src={ph6} alt="placeholder image"/>
+            </section>
+
+            <section className="row">
+                <CustomVideo src={phVid}/>
             </section>
         </main>
         </>
