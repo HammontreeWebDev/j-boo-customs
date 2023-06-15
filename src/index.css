@@ -78,7 +78,7 @@ body {
 
 main {
   /* default style for main to match header text margins */
-  margin: 6% 6% 0% 6%;
+  margin: 0% 6% 0% 6%;
   display: flex;
   flex-flow: column wrap;
   flex: 1;
@@ -90,6 +90,7 @@ main {
   flex: 1;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: 6%;
 }
 
 .text-center {

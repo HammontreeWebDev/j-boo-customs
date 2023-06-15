@@ -25,7 +25,7 @@ const Landing = () => {
     return(
         <>
         <Header backgroundImage={landingHeader}/>
-        <PageTitle whiteText='"Insert' greenText='Foundation Motto"'  />
+        <PageTitle whiteText='"Remembering, Preventing, and Healing:' greenText='Together Against Strep A"'  />
         <main>
             <section className="row">
                 <GalleryPhoto src={ph1} alt="placeholder image"/>
