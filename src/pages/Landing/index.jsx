@@ -4,6 +4,7 @@ import React from "react";
 import Header from "../../components/Header";
 import GalleryPhoto from "../../components/GalleryPhoto";
 import CustomVideo from "../../components/CustomVideo";
+import PageTitle from "../../components/PageTitle";
 
 // import images
 import landingHeader from './assets/img/landing_header.png'
@@ -24,6 +25,7 @@ const Landing = () => {
     return(
         <>
         <Header backgroundImage={landingHeader}/>
+        <PageTitle whiteText='"Insert' greenText='Foundation Motto"'  />
         <main>
             <section className="row">
                 <GalleryPhoto src={ph1} alt="placeholder image"/>

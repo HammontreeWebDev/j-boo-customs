@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: 50% 50%;
     position: relative;
+    overflow: hidden;
 }
 
 .header-shape {
@@ -11,8 +12,10 @@
     height: 100%;
     z-index: 0;
     position: absolute;
-    top: 0;
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid var(--black);
 }
 
 .header-content {

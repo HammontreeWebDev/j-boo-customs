@@ -1,0 +1,9 @@
+.title-text {
+    text-align: center;
+    background-color: var(--black);
+    margin-top: 0;
+    padding: 1%;
+}
+.green-text {
+    color: var(--light-green);
+}
