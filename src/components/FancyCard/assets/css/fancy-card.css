@@ -7,6 +7,9 @@
     position: relative;
     overflow: hidden;
     background-image: linear-gradient(var(--black) 20%, rgba(26, 80, 161, 0));
+
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .fancy-header {
@@ -21,4 +24,89 @@
 .fancy-text {
     position: relative;
     z-index: 100;
+}
+
+.title-pic-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+}
+
+.text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    padding: 3%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.about-us-title {
+    padding: 3% 0% 0% 3%;
+}
+
+.member-photo {
+    height: 50%;
+    object-fit: contain;
+    align-self: flex-start;
+    margin-top: 20%;
+    margin-bottom: auto;
+}
+
+/* media queries to fix the img position and size */
+
+@media screen and (max-width: 1520px) {
+    .member-photo {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 1214px) {
+    .member-photo {
+        height: 40%;
+        margin-top: 50%;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    .member-photo {
+        height: 30%;
+        margin-top: 30%;
+    }
+    .fancy-header {
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .fancy-header {
+        height: 35%;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .fancy-container {
+        flex-flow: column wrap;
+    }
+
+    .title-pic-col {
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    .text-col {
+        flex-flow: row wrap;
+    }
+
+    .member-photo {
+        width: 35%;
+        margin-top: 0%;
+    }
+
+    .fancy-header {
+        height: 25%;
+    }
 }

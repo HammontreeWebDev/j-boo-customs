@@ -96,3 +96,7 @@ main {
 .text-center {
   text-align: center;
 }
+
+.reset-margin {
+  margin: 0;
+}
