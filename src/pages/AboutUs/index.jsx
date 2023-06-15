@@ -27,11 +27,17 @@ const AboutUs = () => {
                 </section>
                 
                 {/* About Me Cards */}
-                <section className="row"></section>
+                <section className="row">
 
-                <section className="row"></section>
+                </section>
 
-                <section className="row"></section>
+                <section className="row">
+
+                </section>
+
+                <section className="row">
+                    
+                </section>
             </main>
         </>
     )
