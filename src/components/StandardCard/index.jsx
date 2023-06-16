@@ -15,6 +15,7 @@ const StandardCard = (props) => {
             <p className="standard-text-body">
                 {props.bodyText}
             </p>
+            {props.customContent}
         </div>
     )
 };

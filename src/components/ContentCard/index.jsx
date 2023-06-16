@@ -12,6 +12,7 @@ const ContentCard = (props) => {
 
             <div className="custom-card-body">
             <p className="body-text custom-body-text">{props.bodyText}</p>
+            {props.customContent}
             </div>
 
         </div>

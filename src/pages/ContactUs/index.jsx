@@ -14,6 +14,7 @@ import Header from "../../components/Header";
 import PageTitle from "../../components/PageTitle";
 import FancyCard from "../../components/FancyCard";
 import ContactInfo from "../../components/ContactInfo";
+import ContentCard from "../../components/ContentCard";
 
 const IconifyPhone = () => {
     return (
@@ -52,7 +53,27 @@ const ContactUs = () => {
                 </section>
 
                 <section className="row">
-                    <p>Hello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello ThereHello There</p>
+                    <ContentCard
+                        greenText="Contact"
+                        whiteText="Form"
+                        customContent={
+                            <form className="contact-form">
+
+                                <div className="form-row">
+                                    <input className="form-input" type="text" placeholder="First Name" />
+                                    <input className="form-input" type="text" placeholder="Last Name" />
+                                    <input className="form-input" type="email" placeholder="youremail@address.com" />
+                                    <input className="form-input" type="tel" placeholder="XXX-XXX-XXXX" />
+                                </div>
+
+                                <div className="form-row">
+                                    <textarea name="message" placeholder="Write your message here...Messages that are sent using this contact form are forwarded to information@j-boocustoms.org" />
+                                </div>
+
+                                <button id="submitBtn" type="submit">SEND</button>
+                            </form>
+                        }
+                    />
                 </section>
 
             </main>

@@ -4,7 +4,7 @@
 /* ! Note that most of the media queries for global classes are located in the header.css file */
 
 :root {
-  
+
   /* *Color Scheme */
 
   --dark-blue: #1A50A1;
@@ -24,7 +24,7 @@
   --dark-blue-trans: rgba(26, 80, 161, .5);
 
   /* *Fonts */
-  --Acme:'Acme', sans-serif;
+  --Acme: 'Acme', sans-serif;
   --Athiti: 'Athiti', sans-serif;
 
 }
@@ -32,20 +32,23 @@
 /* *Font Style Classes (body text will be the default, and located in the body element) */
 
 .h1-header {
-font-family: var(--Acme);
-font-size: 40px;
-font-weight: normal;
+  font-family: var(--Acme);
+  font-size: 40px;
+  font-weight: normal;
 }
+
 .header-subtext {
-font-family: var(--Athiti);
-font-size: 20px;
-font-weight: normal;
+  font-family: var(--Athiti);
+  font-size: 20px;
+  font-weight: normal;
 }
+
 .card-title {
   font-family: var(--Acme);
   font-size: 32px;
   font-weight: normal;
 }
+
 /* .body-text {
   font-family: var(--Athiti);
   font-size: 16px;
@@ -82,6 +85,7 @@ main {
   display: flex;
   flex-flow: column wrap;
   flex: 1;
+  overflow-x: hidden;
 }
 
 .row {
@@ -102,17 +106,31 @@ main {
 }
 
 .light-blue-text {
-color: var(--light-blue);
+  color: var(--light-blue);
 }
 
 .light-green-text {
   color: var(--light-green);
 }
 
-.orange-text{
+.orange-text {
   color: var(--orange);
 }
 
 .underline {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 540px) {
+  main {
+    margin: 0% 1% 0% 1%;
+  }
+
+  .row{
+    margin-top: 1%;
+  }
+
+  .h1-header {
+    margin: 0;
+  }
 }
