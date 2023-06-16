@@ -100,3 +100,11 @@ main {
 .reset-margin {
   margin: 0;
 }
+
+.light-blue-text {
+color: var(--light-blue);
+}
+
+.light-green-text {
+  color: var(--light-green);
+}
