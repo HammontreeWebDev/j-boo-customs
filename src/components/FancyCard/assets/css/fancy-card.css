@@ -29,8 +29,22 @@
 .title-pic-col {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-start;
     width: 30%;
+    height: auto;
+}
+
+.about-us-title {
+    margin-top: 5%;
+    margin-left: 5%;
+    align-self: flex-start;
+}
+
+.member-photo {
+    width: 80%;
+    object-fit: contain;
+    margin-top: 5%;
 }
 
 .text-col {
@@ -44,105 +58,37 @@
     margin-bottom: 6%;
 }
 
-.about-us-title {
-    padding: 3% 0% 0% 3%;
-}
-
-.member-photo {
-    height: 50%;
-    object-fit: contain;
-    align-self: flex-start;
-    margin-top: 20%;
-    margin-bottom: auto;
-}
-
 /* media queries to fix the img position and size */
 
-@media screen and (max-width: 1520px) {
-    .member-photo {
-        margin-top: 30%;
-    }
-}
-
-@media screen and (max-width: 1214px) {
-    .member-photo {
-        height: 40%;
-        margin-top: 50%;
-    }
-}
-
-@media screen and (max-width: 1135px) {
-    .member-photo {
-        height: 30%;
-        margin-top: 30%;
-    }
-    .fancy-header {
-        height: 40%;
-    }
-}
-
-@media screen and (max-width: 1050px) {
-    .fancy-header {
-        height: 35%;
-    }
-}
-
-@media screen and (max-width: 995px) {
-    .fancy-container {
-        flex-flow: column wrap;
-    }
-
+@media screen and (max-width: 1000px) {
     .title-pic-col {
-        flex-flow: row wrap;
-        width: 100%;
-    }
-
-    .text-col {
-        flex-flow: row wrap;
-        margin-top: 10%;
-    }
-
-    .member-photo {
-        /* reset margin */
-        margin: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 20%;
-        height: auto;
-    }
-
-    .fancy-header {
-        height: 25%;
-    }
-}
-
-@media screen and (max-width: 627px) {
-    .member-photo {
-        width: 23%;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .text-col {
-        margin-top: 20%;
-    }
-    .about-us-title {
         width: 50%;
     }
+
     .member-photo {
-        width: 35%;
+        width: 90%;
+        margin-left: 5%;
     }
 }
 
-@media screen and (max-width: 388px) {
-    .text-col {
-        margin-top: 30%;
+@media screen and (max-width: 743px) {
+    .title-pic-col {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .member-photo {
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    .fancy-header{
+        height: 40%;
     }
 }
 
-@media screen and (max-width: 332px) {
-    .fancy-header {
-        height: 15%;
+@media screen and (max-width: 400px) {
+    .fancy-header{
+        height: 25%;
     }
 }
