@@ -99,6 +99,7 @@
 
     .text-col {
         flex-flow: row wrap;
+        margin-top: 10%;
     }
 
     .member-photo {
@@ -107,11 +108,18 @@
         position: absolute;
         right: 0;
         top: 0;
-        height: 225%;
+        width: 20%;
+        height: auto;
     }
 
     .fancy-header {
         height: 25%;
+    }
+}
+
+@media screen and (max-width: 627px) {
+    .member-photo {
+        width: 23%;
     }
 }
 
@@ -121,6 +129,9 @@
     }
     .about-us-title {
         width: 50%;
+    }
+    .member-photo {
+        width: 35%;
     }
 }
 
