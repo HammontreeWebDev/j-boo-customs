@@ -12,6 +12,9 @@ const StrepAAwareness = () => {
         <>
         <Header backgroundImage={awarenessHeader} />
         <PageTitle whiteText="Strep A" greenText="Awareness"/>
+        <main>
+            
+        </main>
         </>
     )
 };
