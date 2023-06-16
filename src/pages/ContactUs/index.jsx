@@ -36,7 +36,7 @@ const ContactUs = () => {
             <main>
 
                 <section className="row">
-                    <FancyCard classSelector="contact-container" memberName="Contact Information" memberPhoto={contactPh} alt="white envelope with a red pencil"
+                    <FancyCard classSelector="contact-container" memberName="Contact Information" memberPhoto={contactPh} photoId="contact-photo" alt="white envelope with a red pencil"
                         contactInfo={
                             <div id="contact-section">
                                 <ContactInfo title="Brad Brown | President" emailIcon={<IconifyEmail />} email="brad@j-boocustoms.org" phoneIcon={<IconifyPhone />} phone="xxx-xxx-xxxx" />

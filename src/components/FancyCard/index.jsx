@@ -12,7 +12,7 @@ const FancyCard = (props) => {
                 <h2 className="card-title reset-margin about-us-title">
                     {props.memberName}
                 </h2>
-                <img className="member-photo" src={props.memberPhoto} alt={props.alt} />
+                <img id={props.photoId} className="member-photo" src={props.memberPhoto} alt={props.alt} />
             </div>
 
             <div className={props.classSelector}>
