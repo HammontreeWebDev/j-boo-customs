@@ -1,0 +1,13 @@
+#contact-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15%;
+    padding-top: 10%;
+}
+
+.contact-container {
+    display: flex;
+    flex: 1;
+}

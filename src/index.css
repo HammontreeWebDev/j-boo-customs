@@ -108,3 +108,11 @@ color: var(--light-blue);
 .light-green-text {
   color: var(--light-green);
 }
+
+.orange-text{
+  color: var(--orange);
+}
+
+.underline {
+  text-decoration: underline;
+}

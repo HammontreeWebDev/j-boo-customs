@@ -15,8 +15,9 @@ const FancyCard = (props) => {
                 <img className="member-photo" src={props.memberPhoto} alt={props.alt} />
             </div>
 
-            <div className="text-col fancy-text">
+            <div className={props.classSelector}>
                 <p className="about-text">{props.aboutText}</p>
+                {props.contactInfo}
             </div>
         </div>
     )
