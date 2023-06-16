@@ -11,3 +11,30 @@
     display: flex;
     flex: 1;
 }
+
+@media screen and (max-width: 743px) {
+    #contact-photo {
+        width: 80%;
+    }
+    #fancy-override {
+        flex-direction: row;
+    }
+    #title-override{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    #fancy-override {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    #title-override{
+        width: 100%;
+    }
+    #contact-photo {
+        width: 50%;
+    }
+}

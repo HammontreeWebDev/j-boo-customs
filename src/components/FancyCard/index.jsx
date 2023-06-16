@@ -5,10 +5,10 @@ import fancyCardHeader from './assets/img/fancy-card-header.svg';
 const FancyCard = (props) => {
 
     return(
-        <div className="fancy-container">
+        <div id={props.fancyContainerId} className="fancy-container">
             <img className="fancy-header" src={fancyCardHeader} alt="Green Arch to enhance design"/>
 
-            <div className="title-pic-col fancy-text">
+            <div id={props.titleColId} className="title-pic-col fancy-text">
                 <h2 className="card-title reset-margin about-us-title">
                     {props.memberName}
                 </h2>
