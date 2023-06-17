@@ -27,8 +27,9 @@ const Header = (props) => {
     // declare navigate to use in onClick for nav buttons
     const navigate = useNavigate();
     return (
-        <header className="header-component" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
+        <header className="header-component">
             <img className="header-shape" src={headerShape} alt="Red Arch to enhance design" />
+            <img className="background-img" src={props.backgroundImage} alt={props.alt} />
             <div className="header-content">
 
                 

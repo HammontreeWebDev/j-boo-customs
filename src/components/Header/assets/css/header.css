@@ -8,10 +8,21 @@
     background-color: var(--black);
 }
 
-.header-shape {
+.background-img {
     width: 100%;
     height: 100%;
     z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.header-shape {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,7 +37,7 @@
     justify-content: space-between;
     flex: 1;
     position: relative;
-    z-index: 1;
+    z-index: 10;
     margin-left: 6%;
     margin-right: 6%;
     padding-top: 1%;
