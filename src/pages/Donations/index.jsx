@@ -5,7 +5,7 @@ import donationsHeader from './assets/img/donations-header.png';
 // css
 import './assets/css/donations.css';
 
-// import components
+// import componentss
 import Header from "../../components/Header";
 import PageTitle from "../../components/PageTitle";
 import ContentCard from "../../components/ContentCard";
