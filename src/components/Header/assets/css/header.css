@@ -1,3 +1,7 @@
+.animate__animated.animate__fadeIn{
+    animation-duration: 5s;
+}
+
 .header-component {
     max-width: 100vw;
     height: 53vh;

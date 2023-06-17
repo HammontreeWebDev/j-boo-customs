@@ -64,7 +64,7 @@ const Header = (props) => {
                     id='dropdown-nav'
                     className={`nav-bar ${isNavCollapsed ? 'collapsed dropdown-nav-hidden' : 'dropdown-nav-visible'}`}>
 
-                    <button whileHover={{ scale: 1.2 }} onClick={() => navigate('/about_us')} className="subheading-text">About Us</button>
+                    <button onClick={() => navigate('/about_us')} className="subheading-text">About Us</button>
 
                     <button onClick={() => navigate('/jesses_story')} className="subheading-text">Jesse's Story</button>
 
