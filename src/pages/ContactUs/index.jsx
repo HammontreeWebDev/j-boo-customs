@@ -14,7 +14,7 @@ import Header from "../../components/Header";
 import PageTitle from "../../components/PageTitle";
 import FancyCard from "../../components/FancyCard";
 import ContactInfo from "../../components/ContactInfo";
-import ContentCard from "../../components/ContentCard";
+import FormContainer from "../../components/FormContainer";
 import Footer from "../../components/Footer";
 
 const IconifyPhone = () => {
@@ -54,10 +54,10 @@ const ContactUs = () => {
                 </section>
 
                 <section className="row">
-                    <ContentCard
+                    <FormContainer
                         greenText="Contact"
                         whiteText="Form"
-                        customContent={
+                        form={
                             <form className="contact-form">
 
                                 <div className="form-row">

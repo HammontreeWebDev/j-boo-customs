@@ -50,6 +50,7 @@
     border: none;
     border-radius: 3rem;
     font-family: var(--Acme);
+    /* margin-top: 1%; */
 }
 
 #submitBtn:hover{
