@@ -24,7 +24,7 @@ const Donations = () => {
     return (
         <>
             <Header backgroundImage={donationsHeader} isPageChanging={isPageChanging} handleNavigate={handleNavigate} />
-            <PageTitle whiteText="Donate" greenText="Now" />
+            <PageTitle isPageChanging={isPageChanging} whiteText="Donate" greenText="Now" />
             <main>
                 <section className="row">
                     <ContentCard greenText="Why You Should" whiteText=" Donate" bodyText={
