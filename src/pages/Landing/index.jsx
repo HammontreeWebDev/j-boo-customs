@@ -19,6 +19,9 @@ import ph6 from './assets/img/ph-6.png';
 // import video
 import phVid from './assets/video/ph-vid.mp4';
 
+// animations
+import { Fade } from "react-awesome-reveal";
+
 
 // Landing Page | route = /landing
 const Landing = () => {

@@ -5,6 +5,7 @@
     background-position: 50% 50%;
     position: relative;
     overflow: hidden;
+    background-color: var(--black);
 }
 
 .header-shape {

@@ -5,6 +5,9 @@ import headerShape from './assets/img/header-shape.svg';
 import { Icon, enableCache } from '@iconify/react';
 import { useNavigate } from "react-router-dom";
 
+// animations
+import { Fade } from "react-awesome-reveal";
+
 enableCache('local');
 
 const Header = (props) => {
@@ -26,15 +29,16 @@ const Header = (props) => {
 
     // declare navigate to use in onClick for nav buttons
     const navigate = useNavigate();
-
     return (
         <header className="header-component" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
             <img className="header-shape" src={headerShape} alt="Red Arch to enhance design" />
             <div className="header-content">
 
+                
                 <button onClick={() => navigate('/')} className="h1-header jrb-button">
                     Jesse Ryder Brown Foundation, INC
                 </button>
+                
 
 
                 <button className="toggle-nav-button" onClick={() => setIsNavCollapsed(!isNavCollapsed)}>
@@ -45,7 +49,7 @@ const Header = (props) => {
                     id='dropdown-nav'
                     className={`nav-bar ${isNavCollapsed ? 'collapsed dropdown-nav-hidden' : 'dropdown-nav-visible'}`}>
 
-                    <button onClick={() => navigate('/about_us')} className="subheading-text">About Us</button>
+                    <button whileHover={{scale: 1.2}}onClick={() => navigate('/about_us')} className="subheading-text">About Us</button>
 
                     <button onClick={() => navigate('/jesses_story')} className="subheading-text">Jesse's Story</button>
 
