@@ -15,6 +15,7 @@ const Header = (props) => {
     // keep track of state
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
     const { isImageLoaded, handleImageLoad } = useImageLoading();
+    const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -32,6 +33,7 @@ const Header = (props) => {
     const headerImageClass = isImageLoaded ? "background-img animate__animated animate__fadeIn" : "hidden";
     // if page is changing set the fadeout animation
     const exitClass = "background-img animate__animated animate__fadeOut";
+    const hoverClass = "animate__animated animate__pulse animate__infinite";
 
     return (
         <header className="header-component">
@@ -44,7 +46,10 @@ const Header = (props) => {
             <div className="header-content">
 
 
-                <button onClick={() => props.handleNavigate('/')} className="h1-header jrb-button">
+                <button onClick={() => props.handleNavigate('/')}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                className={`h1-header jrb-button ${isHovered ? hoverClass : ""}`}>
                     Jesse Ryder Brown Foundation, INC
                 </button>
 
