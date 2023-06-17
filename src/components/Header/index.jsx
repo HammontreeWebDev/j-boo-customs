@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from "react";
-
+// css
 import './assets/css/header.css';
-import headerShape from './assets/img/header-shape.svg';
-import { Icon, enableCache } from '@iconify/react';
+// components
+import LoadingDiv from "../LoadingDiv";
+
 import { useNavigate } from "react-router-dom";
 
+// images/icons
+import headerShape from './assets/img/header-shape.svg';
+import { Icon, enableCache } from '@iconify/react';
 enableCache('local');
 
 const Header = (props) => {
 
-    // keep track of state for the collapsible navbar
+    // keep track of state
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+    const [isImageLoaded, setIsImageLoaded] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -26,17 +31,29 @@ const Header = (props) => {
 
     // declare navigate to use in onClick for nav buttons
     const navigate = useNavigate();
+
+    // handle image loading
+    const handleImageLoad = () => {
+        setIsImageLoaded(true);
+    }
+
+    const headerImageClass = isImageLoaded ? "background-img animate__animated animate__fadeIn" : "hidden";
+
     return (
         <header className="header-component">
             <img className="header-shape" src={headerShape} alt="Red Arch to enhance design" />
-            <img className="background-img" src={props.backgroundImage} alt={props.alt} />
+
+            {isImageLoaded ? null : <LoadingDiv />}
+
+            <img className={headerImageClass} src={props.backgroundImage} alt={props.alt} onLoad={handleImageLoad} onLoadedData={handleImageLoad} />
+
             <div className="header-content">
 
-                
+
                 <button onClick={() => navigate('/')} className="h1-header jrb-button">
                     Jesse Ryder Brown Foundation, INC
                 </button>
-                
+
 
 
                 <button className="toggle-nav-button" onClick={() => setIsNavCollapsed(!isNavCollapsed)}>
@@ -47,7 +64,7 @@ const Header = (props) => {
                     id='dropdown-nav'
                     className={`nav-bar ${isNavCollapsed ? 'collapsed dropdown-nav-hidden' : 'dropdown-nav-visible'}`}>
 
-                    <button whileHover={{scale: 1.2}}onClick={() => navigate('/about_us')} className="subheading-text">About Us</button>
+                    <button whileHover={{ scale: 1.2 }} onClick={() => navigate('/about_us')} className="subheading-text">About Us</button>
 
                     <button onClick={() => navigate('/jesses_story')} className="subheading-text">Jesse's Story</button>
 
