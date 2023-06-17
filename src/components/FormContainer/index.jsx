@@ -3,8 +3,12 @@ import './assets/css/formcontainer.css';
 
 const FormContainer = (props) => {
 
+    // ! For Entire Div
+    const initialClass = "form-card animate__animated animate__fadeIn";
+    const exitClass = "form-card animate__animated animate__fadeOut";
+
     return (
-        <div className="form-card">
+        <div className={props.isPageChanging ? exitClass : initialClass}>
 
             <div className="form-title">
                 <h2 className="card-title text-center"><span className="green-text">{props.greenText}</span> {props.whiteText}</h2>
