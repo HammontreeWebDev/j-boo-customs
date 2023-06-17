@@ -41,7 +41,7 @@ const Landing = () => {
             </section>
 
             <section className="row">
-                <CustomVideo src={phVid}/>
+                <CustomVideo isPageChanging={isPageChanging} src={phVid}/>
             </section>
         </main>
         <Footer />

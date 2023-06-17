@@ -1,4 +1,6 @@
 import React from "react";
+import useImageLoading from '../../utils/imageLoadingUtils';
+// css
 import './assets/css/content-card.css';
 
 const ContentCard = (props) => {
