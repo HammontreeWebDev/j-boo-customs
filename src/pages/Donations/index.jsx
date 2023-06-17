@@ -1,4 +1,5 @@
 import React from "react";
+import useNavigation from "../../utils/navigationUtils";
 
 import donationsHeader from './assets/img/donations-header.png';
 
@@ -13,6 +14,8 @@ import Footer from "../../components/Footer";
 
 // Donations Page | route = /donations
 const Donations = () => {
+    // ! keep track of state using helper function to fire exit animations
+    const { isPageChanging, handleNavigate } = useNavigation();
 
     const donationPortal = () => {
         window.open(`https://donate.stripe.com/test_00g8xxgRb20rgyAaEE`);
@@ -20,7 +23,7 @@ const Donations = () => {
 
     return (
         <>
-            <Header backgroundImage={donationsHeader} />
+            <Header backgroundImage={donationsHeader} isPageChanging={isPageChanging} handleNavigate={handleNavigate} />
             <PageTitle whiteText="Donate" greenText="Now" />
             <main>
                 <section className="row">

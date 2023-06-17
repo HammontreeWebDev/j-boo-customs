@@ -1,4 +1,5 @@
 import React from "react";
+import useNavigation from "../../utils/navigationUtils";
 // import Iconify Icons
 import { Icon } from '@iconify/react';
 
@@ -30,10 +31,12 @@ const IconifyEmail = () => {
 
 // Contact Us Page | route = /contact_us
 const ContactUs = () => {
+    // ! keep track of state using helper function to fire exit animations
+    const { isPageChanging, handleNavigate } = useNavigation();
 
     return (
         <>
-            <Header backgroundImage={contactUsHeader} />
+            <Header backgroundImage={contactUsHeader} isPageChanging={isPageChanging} handleNavigate={handleNavigate} />
             <PageTitle whiteText="Contact" greenText="Us" />
             <main>
                 {/* id props to override css for about me classes */}
