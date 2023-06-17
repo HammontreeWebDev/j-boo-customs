@@ -37,7 +37,7 @@ const ContactUs = () => {
     return (
         <>
             <Header backgroundImage={contactUsHeader} isPageChanging={isPageChanging} handleNavigate={handleNavigate} />
-            <PageTitle whiteText="Contact" greenText="Us" />
+            <PageTitle isPageChanging={isPageChanging} whiteText="Contact" greenText="Us" />
             <main>
                 {/* id props to override css for about me classes */}
                 <section className="row">

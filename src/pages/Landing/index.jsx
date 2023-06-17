@@ -32,12 +32,12 @@ const Landing = () => {
         <PageTitle isPageChanging={isPageChanging} whiteText='"Remembering, Preventing, and Healing:' greenText='Together Against Strep A"'  />
         <main>
             <section className="row">
-                <GalleryPhoto src={ph1} alt="placeholder image"/>
-                <GalleryPhoto src={ph2} alt="placeholder image"/>
-                <GalleryPhoto src={ph3} alt="placeholder image"/>
-                <GalleryPhoto src={ph4} alt="placeholder image"/>
-                <GalleryPhoto src={ph5} alt="placeholder image"/>
-                <GalleryPhoto src={ph6} alt="placeholder image"/>
+                <GalleryPhoto isPageChanging={isPageChanging} src={ph1} alt="placeholder image"/>
+                <GalleryPhoto isPageChanging={isPageChanging} src={ph2} alt="placeholder image"/>
+                <GalleryPhoto isPageChanging={isPageChanging} src={ph3} alt="placeholder image"/>
+                <GalleryPhoto isPageChanging={isPageChanging} src={ph4} alt="placeholder image"/>
+                <GalleryPhoto isPageChanging={isPageChanging} src={ph5} alt="placeholder image"/>
+                <GalleryPhoto isPageChanging={isPageChanging} src={ph6} alt="placeholder image"/>
             </section>
 
             <section className="row">

@@ -18,7 +18,7 @@ const StrepAAwareness = () => {
     return (
         <>
             <Header backgroundImage={awarenessHeader} isPageChanging={isPageChanging} handleNavigate={handleNavigate} />
-            <PageTitle whiteText="Strep A" greenText="Awareness" />
+            <PageTitle isPageChanging={isPageChanging} whiteText="Strep A" greenText="Awareness" />
             <main>
 
                 {/* fight back section */}

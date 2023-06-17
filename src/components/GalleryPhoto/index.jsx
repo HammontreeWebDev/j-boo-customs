@@ -1,9 +1,13 @@
 import React from "react";
 import './assets/css/gallery.css';
+import 'animate.css';
 
 const GalleryPhoto = (props) => {
+    const initialClass = "gallery-photo";
+    const exitClass = "gallery-photo animate__animated animate__fadeOut";
+
     return(
-        <img className="gallery-photo" src={props.src} alt={props.alt} />
+        <img className={props.isPageChanging ? exitClass : initialClass} src={props.src} alt={props.alt} />
     )
 }
 

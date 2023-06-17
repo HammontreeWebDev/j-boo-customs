@@ -20,7 +20,7 @@ const JessesStory = () => {
     return (
         <>
             <Header backgroundImage={storyHeader} isPageChanging={isPageChanging} handleNavigate={handleNavigate} />
-            <PageTitle whiteText="Jesse's" greenText="Story" />
+            <PageTitle isPageChanging={isPageChanging} whiteText="Jesse's" greenText="Story" />
             <main>
                 <section className="row">
                     <Jesse whiteTitle="Jesse Brown -" blueTitle='"J-Boo"' src={jessePhImg} alt="placeholder image for jesse"

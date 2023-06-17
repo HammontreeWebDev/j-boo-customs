@@ -20,7 +20,7 @@ const AboutUs = () => {
     return (
         <>
             <Header backgroundImage={aboutUsHeader} isPageChanging={isPageChanging} handleNavigate={handleNavigate}/>
-            <PageTitle whiteText='About' greenText='Us' />
+            <PageTitle isPageChanging={isPageChanging} whiteText='About' greenText='Us' />
             <main>
                 {/* Who we Are */}
                 <section className="row">
