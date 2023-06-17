@@ -39,12 +39,16 @@ padding: 10% 5% 5% 5%;
 
 @media screen and (max-width: 597px) {
     .title-container{
+        width: fit-content;
         display: flex;
         flex-flow: column-reverse wrap;
         justify-content: center;
         align-items: center;
         padding: 0;
         margin: 0;
+    }
+    .text-container{
+        width: fit-content;
     }
    .jesse-img{
     /* reset position */
