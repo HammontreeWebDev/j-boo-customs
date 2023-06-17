@@ -4,8 +4,6 @@ import './assets/css/header.css';
 // components
 import LoadingDiv from "../LoadingDiv";
 
-import { useNavigate } from "react-router-dom";
-
 // images/icons
 import headerShape from './assets/img/header-shape.svg';
 import { Icon, enableCache } from '@iconify/react';
@@ -28,9 +26,6 @@ const Header = (props) => {
 
         return () => window.removeEventListener('resize', handleResize);
     }, []);
-
-    // declare navigate to use in onClick for nav buttons
-    const navigate = useNavigate();
 
     // handle image loading
     const handleImageLoad = () => {
