@@ -16,7 +16,6 @@ const Header = (props) => {
     // keep track of state
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
     const [isImageLoaded, setIsImageLoaded] = useState(false);
-    const [isPageChanging, setIsPageChanging] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -43,28 +42,18 @@ const Header = (props) => {
     // if page is changing set the fadeout animation
     const exitClass = "background-img animate__animated animate__fadeOut";
 
-    // ! Delay on navigation to fire exit animations
-    const handleNavigate = (navigateTo) => {
-
-        setIsPageChanging(true);
-
-        setTimeout(() => {
-            navigate(navigateTo);
-        }, 700);
-    }
-
     return (
         <header className="header-component">
             <img className="header-shape" src={headerShape} alt="Red Arch to enhance design" />
 
             {isImageLoaded ? null : <LoadingDiv />}
 
-            <img className={isPageChanging ? exitClass : headerImageClass} src={props.backgroundImage} alt={props.alt} onLoad={handleImageLoad} onLoadedData={handleImageLoad} />
+            <img className={props.isPageChanging ? exitClass : headerImageClass} src={props.backgroundImage} alt={props.alt} onLoad={handleImageLoad} onLoadedData={handleImageLoad} />
 
             <div className="header-content">
 
 
-                <button onClick={() => handleNavigate('/')} className="h1-header jrb-button">
+                <button onClick={() => props.handleNavigate('/')} className="h1-header jrb-button">
                     Jesse Ryder Brown Foundation, INC
                 </button>
 
@@ -78,15 +67,15 @@ const Header = (props) => {
                     id='dropdown-nav'
                     className={`nav-bar ${isNavCollapsed ? 'collapsed dropdown-nav-hidden' : 'dropdown-nav-visible'}`}>
 
-                    <button onClick={() => handleNavigate('/about_us')} className="subheading-text">About Us</button>
+                    <button onClick={() => props.handleNavigate('/about_us')} className="subheading-text">About Us</button>
 
-                    <button onClick={() => handleNavigate('/jesses_story')} className="subheading-text">Jesse's Story</button>
+                    <button onClick={() => props.handleNavigate('/jesses_story')} className="subheading-text">Jesse's Story</button>
 
-                    <button onClick={() => handleNavigate('/strep_a_awareness')} className="subheading-text">Strep A Awareness</button>
+                    <button onClick={() => props.handleNavigate('/strep_a_awareness')} className="subheading-text">Strep A Awareness</button>
 
-                    <button onClick={() => handleNavigate('/contact_us')} className="subheading-text">Contact Us</button>
+                    <button onClick={() => props.handleNavigate('/contact_us')} className="subheading-text">Contact Us</button>
 
-                    <button onClick={() => handleNavigate('/donations')} className="subheading-text">Donations</button>
+                    <button onClick={() => props.handleNavigate('/donations')} className="subheading-text">Donations</button>
                 </nav>
                 <div className="header-subtext tagline-container">
                     <p className="header-tagline">

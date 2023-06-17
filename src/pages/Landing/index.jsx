@@ -1,4 +1,6 @@
-import React from "react";
+import { React } from "react";
+import useNavigation from "../../utils/navigationUtils";
+
 
 // import components
 import Header from "../../components/Header";
@@ -21,10 +23,12 @@ import phVid from './assets/video/ph-vid.mp4';
 
 // Landing Page | route = /landing
 const Landing = () => {
+    // ! keep track of state using helper function to fire exit animations
+    const { isPageChanging , handleNavigate } = useNavigation();
 
     return(
         <>
-        <Header backgroundImage={landingHeader}/>
+        <Header backgroundImage={landingHeader} handleNavigate={handleNavigate} isPageChanging={isPageChanging}/>
         <PageTitle whiteText='"Remembering, Preventing, and Healing:' greenText='Together Against Strep A"'  />
         <main>
             <section className="row">
