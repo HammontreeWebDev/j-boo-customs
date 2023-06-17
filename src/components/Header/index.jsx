@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import useImageLoading from '../../utils/imageLoadingUtils';
 // css
 import './assets/css/header.css';
 // components
@@ -13,7 +14,7 @@ const Header = (props) => {
 
     // keep track of state
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
-    const [isImageLoaded, setIsImageLoaded] = useState(false);
+    const { isImageLoaded, handleImageLoad } = useImageLoading();
 
     useEffect(() => {
         const handleResize = () => {
@@ -26,11 +27,6 @@ const Header = (props) => {
 
         return () => window.removeEventListener('resize', handleResize);
     }, []);
-
-    // handle image loading
-    const handleImageLoad = () => {
-        setIsImageLoaded(true);
-    }
 
     // if image is loaded then fade in, otherwise hide the image completely -- loading div will conditionally render based on state in return statement
     const headerImageClass = isImageLoaded ? "background-img animate__animated animate__fadeIn" : "hidden";
