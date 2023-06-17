@@ -2,7 +2,6 @@ import React from "react";
 import './assets/css/page-title.css';
 
 // animations
-import { Fade } from "react-awesome-reveal";
 
 const PageTitle = (props) => {
 

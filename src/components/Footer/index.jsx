@@ -11,7 +11,7 @@ const Footer = () => {
         <footer className="footer-component">
             <img className="footer-shape" src={footerShape} alt="Red Arch to enhance design" />
             <p className="copyright">Copyright © 2023 Jesse Ryder Brown Foundation, Inc.</p>
-            <small className="small-text">Website Built By: <span><a className="hyperlink" href="https://www.kailebhammontree.com/" target="_blank">Hammontree Full-Stack Solutions LLC</a></span></small>
+            <small className="small-text">Website Built By: <span><a className="hyperlink" href="https://www.kailebhammontree.com/" target="_blank" rel="noreferrer">Hammontree Full-Stack Solutions LLC</a></span></small>
         </footer>
     )
 }
