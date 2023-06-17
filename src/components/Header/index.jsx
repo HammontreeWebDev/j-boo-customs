@@ -5,9 +5,6 @@ import headerShape from './assets/img/header-shape.svg';
 import { Icon, enableCache } from '@iconify/react';
 import { useNavigate } from "react-router-dom";
 
-// animations
-import { Fade } from "react-awesome-reveal";
-
 enableCache('local');
 
 const Header = (props) => {
