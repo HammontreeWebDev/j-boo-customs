@@ -5,6 +5,7 @@ import aboutUsHeader from './assets/img/about-us-header.png';
 import PageTitle from "../../components/PageTitle";
 import ContentCard from "../../components/ContentCard";
 import FancyCard from "../../components/FancyCard";
+import Footer from "../../components/Footer";
 
 // import images
 import bradPlaceHolder from "./assets/img/brad-placeholder.png";
@@ -54,6 +55,7 @@ const AboutUs = () => {
                     </>}/>
                 </section>
             </main>
+            <Footer />
         </>
     )
 }

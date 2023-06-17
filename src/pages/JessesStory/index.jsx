@@ -5,6 +5,7 @@ import storyHeader from './assets/img/story-header.png';
 import Header from "../../components/Header";
 import PageTitle from "../../components/PageTitle";
 import Jesse from "../../components/Jesse";
+import Footer from "../../components/Footer";
 
 // import images
 import jessePhImg from './assets/img/jesse-placeholder.png'
@@ -29,6 +30,7 @@ const JessesStory = () => {
                     } />
                 </section>
             </main>
+            <Footer />
         </>
     )
 };

@@ -7,6 +7,7 @@ import awarenessHeader from './assets/img/awareness-header.png';
 import Header from "../../components/Header";
 import PageTitle from "../../components/PageTitle";
 import StandardCard from "../../components/StandardCard";
+import Footer from "../../components/Footer";
 
 // Strep A Awareness Page | route = /strep_a_awareness
 const StrepAAwareness = () => {
@@ -53,6 +54,7 @@ const StrepAAwareness = () => {
             } />
             </section>
         </main>
+        <Footer />
         </>
     )
 };

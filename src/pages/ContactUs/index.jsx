@@ -15,6 +15,7 @@ import PageTitle from "../../components/PageTitle";
 import FancyCard from "../../components/FancyCard";
 import ContactInfo from "../../components/ContactInfo";
 import ContentCard from "../../components/ContentCard";
+import Footer from "../../components/Footer";
 
 const IconifyPhone = () => {
     return (
@@ -77,6 +78,7 @@ const ContactUs = () => {
                 </section>
 
             </main>
+            <Footer />
         </>
     )
 };

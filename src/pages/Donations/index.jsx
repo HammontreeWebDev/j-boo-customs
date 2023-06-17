@@ -9,6 +9,7 @@ import './assets/css/donations.css';
 import Header from "../../components/Header";
 import PageTitle from "../../components/PageTitle";
 import ContentCard from "../../components/ContentCard";
+import Footer from "../../components/Footer";
 
 // Donations Page | route = /donations
 const Donations = () => {
@@ -36,6 +37,7 @@ const Donations = () => {
                     } />
                 </section>
             </main>
+            <Footer />
         </>
     )
 };

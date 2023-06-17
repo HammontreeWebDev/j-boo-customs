@@ -5,6 +5,7 @@ import Header from "../../components/Header";
 import GalleryPhoto from "../../components/GalleryPhoto";
 import CustomVideo from "../../components/CustomVideo";
 import PageTitle from "../../components/PageTitle";
+import Footer from "../../components/Footer";
 
 // import images
 import landingHeader from './assets/img/landing_header.png'
@@ -40,6 +41,7 @@ const Landing = () => {
                 <CustomVideo src={phVid}/>
             </section>
         </main>
+        <Footer />
         </>
     )
 };
