@@ -1,12 +1,14 @@
 import React from "react";
-import useImageLoading from '../../utils/imageLoadingUtils';
 // css
 import './assets/css/content-card.css';
+// components
 
 const ContentCard = (props) => {
+    const initialClass = "content-card animate__animated animate__fadeIn";
+    const exitClass = "content-card animate__animated animate__fadeOut";
 
     return (
-        <div className="content-card">
+        <div className={props.isPageChanging ? exitClass : initialClass}>
 
             <div className="custom-title">
                 <h2 className="card-title text-center"><span className="green-text">{props.greenText}</span> {props.whiteText}</h2>
