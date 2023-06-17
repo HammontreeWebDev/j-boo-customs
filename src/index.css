@@ -85,7 +85,7 @@ main {
   display: flex;
   flex-flow: column wrap;
   flex: 1;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .row {

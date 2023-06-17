@@ -49,6 +49,7 @@
     padding: 1% 5% 1% 5%;
     border: none;
     border-radius: 3rem;
+    font-family: var(--Acme);
 }
 
 #submitBtn:hover{
