@@ -63,15 +63,15 @@ const Header = (props) => {
                     id='dropdown-nav'
                     className={`nav-bar ${isNavCollapsed ? 'collapsed dropdown-nav-hidden' : 'dropdown-nav-visible'}`}>
 
-                    <button onClick={() => props.handleNavigate('/about_us')} className="subheading-text">About Us</button>
+                    <button onClick={() => props.handleNavigate('/about_us')} className="subheading-text nav-btn">About Us</button>
 
-                    <button onClick={() => props.handleNavigate('/jesses_story')} className="subheading-text">Jesse's Story</button>
+                    <button onClick={() => props.handleNavigate('/jesses_story')} className="subheading-text nav-btn">Jesse's Story</button>
 
-                    <button onClick={() => props.handleNavigate('/strep_a_awareness')} className="subheading-text">Strep A Awareness</button>
+                    <button onClick={() => props.handleNavigate('/strep_a_awareness')} className="subheading-text nav-btn">Strep A Awareness</button>
 
-                    <button onClick={() => props.handleNavigate('/contact_us')} className="subheading-text">Contact Us</button>
+                    <button onClick={() => props.handleNavigate('/contact_us')} className="subheading-text nav-btn">Contact Us</button>
 
-                    <button onClick={() => props.handleNavigate('/donations')} className="subheading-text">Donations</button>
+                    <button onClick={() => props.handleNavigate('/donations')} className="subheading-text nav-btn">Donations</button>
                 </nav>
                 <div className="header-subtext tagline-container">
                     <p className="header-tagline">
